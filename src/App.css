@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+  --primary-white:rgb(233, 233, 233);
+  --primary-orange: rgb(255, 178, 55);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: "Roboto Condesed", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/****************************NAVBAR******************/
+.logo{
+  width: 16.25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*------------menu links------------*/
+nav a.nav-link{
+  font-weight: 500;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ui li{
+  text-transform: uppercase;
+
+}
+.navbar-nav >li >a{
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color:var(--primary-white)  !important;
+  
+}
+.navbar-nav > li > a.active, .navbar-nav > li >a:focus{
+  border-top: 0.1875rem solid var(--primary-orange) ;
+}
+
+.navbar-nav > li > a:hover{
+  border-top: 0.1875rem solid var(--primary-orange) ;
+}
+/****************************header******************/
+
+.header-wraper{ 
+  position: relative;
+  background: url(Background-wallpaper.jpg);
+  background-size:cover ;
+  background-position: center;
+  height: 200vh;
+ 
+}
+
+.main-info{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align:center;
+  font-family: "Roboto Condesed", sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.typed-text{
+  font-size: 2rem;
+  text-transform: uppercase;
+  color:var(--primary-orange)
 }
